@@ -1,0 +1,108 @@
+*{
+    font-family: "DM Serif Text", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-bg:#00132D;
+    --primary-f-color:#fff;
+    --secondary-color:#747474;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background:var(--primary-bg);
+    display: flex;
+    align-items: center;
+    
+}
+.image{
+    
+    height:550px;
+    display: flex;
+    flex-direction: column;
+    min-height: 460px;
+    min-width: 460px;
+    background-image:url(bg.png);
+background-position:center ;
+background-repeat:no-repeat;
+background-size: contain;
+
+justify-content: flex-end;
+
+padding: 0 100px;
+}
+
+.image .quote{
+    position:relative;
+height: max-content;
+
+bottom: 50px;
+width: 100%;
+    color:#fff;
+    font-weight: 800;
+padding: 25px;
+    font-size: 25px;
+}
+
+.grid{
+    height: 100vh;
+    width: 100%;
+    flex-shrink: 1;
+    padding: 30px 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   color:var(--secondary-color);
+}
+
+.author{
+   width: 95%;
+   text-align: end;
+    padding: 10px ;
+    
+    color:#fff
+}
+
+.grid #p2,#p6{position: relative;
+
+}
+
+.grid #p1,#p4{position: relative;
+    padding: 20px;
+}
+.grid #p3,#p5{position: relative;
+    padding: 10px;
+}
+
+ button{
+    background: #00132D; 
+    outline: 0;
+    color: #fff;
+    padding: 15px 20px;
+    position: relative;
+    top: 41%;
+    border-radius: 2px;
+    left: 62%;
+    
+   border: 1px solid #fdf0d5; 
+   transition: box-shadow 0.2s ease-in-out;
+
+}   
+
+button:hover{
+    color: #caf0f8;
+    box-shadow: -50px 0px 3px 0px #f95738 inset;
+}    
+
+
